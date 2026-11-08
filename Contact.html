@@ -5,6 +5,7 @@
   <title>Contact - Boran Sert</title>
 <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -28,43 +29,70 @@
     </div>
   </nav>
 
-  <h1>Neem Contact Op</h1>
-  
-  <p>Heb je een vraag of wil je contact opnemen? Vul dan onderstaand formulier in of stuur een e-mail.</p>
+  <main class="container py-5 flex-grow-1">
+    <h1>Neem contact op</h1>
+    <p class="lead">Heb je een vraag of wil je contact opnemen? Vul het formulier in of stuur me een e-mail.</p>
+    <div class="row g-4 mt-1">
+      <div class="col-12 col-lg-5">
+        <div class="card h-100"><div class="card-body">
+          <h2 class="h5 card-title">Gegevens</h2>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><i class="bi bi-person me-2"></i>Sert Boran</li>
+            <li class="mb-2"><i class="bi bi-mortarboard me-2"></i>Graduaat Programmeren, Thomas More Geel</li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:r1116745@student.thomasmore.be">r1116745@student.thomasmore.be</a></li>
+            <!-- Voeg zelf toe: adres, woonplaats, land, telefoon, Discord/LinkedIn -->
+          </ul>
+        </div></div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div class="card"><div class="card-body">
+          <h2 class="h5 card-title">Contactformulier</h2>
+          <form action="https://tm-statweb.be/forms.php" method="post">
+            <div class="mb-3">
+              <label for="naam" class="form-label">Naam en voornaam</label>
+              <input type="text" class="form-control" id="naam" name="naam" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mailadres</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="skills" class="form-label">Interesse in skills</label>
+              <select class="form-select" id="skills" name="skills" required>
+                <option value="" selected disabled>Reden contact/Vraag over:</option>
+                <option>HTML</option><option>CSS</option><option>Bootstrap</option>
+                <option>JavaScript</option><option>SQL</option><option>C#</option><option>Overig</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="vraag" class="form-label">Bericht</label>
+              <textarea class="form-control" id="vraag" name="vraag" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Verstuur bericht</button>
+          </form>
+        </div></div>
+      </div>
+    </div>
+  </main>
 
-  <p><strong>E-mail:</strong> <a href="mailto:r1116745@student.thomasmore.be">r1116745@student.thomasmore.be</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank">Mijn LinkedIn Profiel(ik heb geen)</a></p>
-
-  <h2>Contactformulier</h2>
-  <form action="#" method="post">
-    <div>
-      <label for="naam">Naam:</label><br>
-      <input type="text" id="naam" name="naam" required>
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">&copy; 2026 Sert Boran</div>
+        <div class="col-6 text-end">
+          <a href="https://www.facebook.com/" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/" class="text-white"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
     </div>
-    <br>
-    <div>
-      <label for="email">E-mailadres:</label><br>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <br>
-    <div>
-      <label for="onderwerp">Onderwerp:</label><br>
-      <input type="text" id="onderwerp" name="onderwerp" required>
-    </div>
-    <br>
-    <div>
-      <label for="bericht">Vraag / Bericht:</label><br>
-      <textarea id="bericht" name="bericht" rows="5" required></textarea>
-    </div>
-    <br>
-    <div>
-      <button type="submit">Verstuur Bericht</button>
-    </div>
-  </form>
-
-  <footer>
-    <p>&copy; 2026 Boran Sert</p>
   </footer>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

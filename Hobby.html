@@ -1,94 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>Hobby's - Boran Sert</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="De hobby's van Boran Sert: krachttraining, motorrijden en sleutelen."
+    />
+    <meta name="author" content="Boran Sert" />
+    <title>Hobby | Boran Sert</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Boran Sert</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#hoofdmenu"
+          aria-controls="hoofdmenu"
+          aria-expanded="false"
+          aria-label="Menu openen"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hoofdmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="ervaring.html">Ervaring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="hobby.html"
+                >Hobby</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container py-5 flex-grow-1">
+      <h1>Mijn hobby's en interesses</h1>
+      <p class="lead">
+        Naast mijn studie vind ik het belangrijk om bezig te blijven met
+        activiteiten die mij energie geven. Mijn hobby's laten me even tot rust
+        komen en helpen me vaardigheden ontwikkelen die van pas komen bij het
+        programmeren: krachttraining, motorrijden en sleutelen aan mechanica.
+      </p>
+
+      <div
+        id="hobbyCarousel"
+        class="carousel slide my-4"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hobbyCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hobbyCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#hobbyCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img
+              src="images/Hobby1.jpg"
+              class="d-block w-100"
+              alt="Krachttraining in de sportschool"
+            />
+            <div class="carousel-caption">
+              <p class="mb-0">
+                Meerdere keren per week train ik in de sportschool.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Hobby2.jpg"
+              class="d-block w-100"
+              alt="Gewichten heffen"
+            />
+            <div class="carousel-caption">
+              <p class="mb-0">
+                Progressie komt door elke week consequent te trainen.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/Hobby3.jpg"
+              class="d-block w-100"
+              alt="Motorfiets op de weg"
+            />
+            <div class="carousel-caption">
+              <p class="mb-0">
+                Na een dag achter het scherm maak ik mijn hoofd leeg op de
+                motor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hobbyCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span
+          ><span class="visually-hidden">Vorige</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hobbyCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span
+          ><span class="visually-hidden">Volgende</span>
+        </button>
+      </div>
+
+      <div class="accordion mb-5" id="hobbyUitleg">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#h1"
+            >
+              <i class="bi bi-trophy me-2"></i>Krachttraining en discipline
+            </button>
+          </h2>
+          <div
+            id="h1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#hobbyUitleg"
+          >
+            <div class="accordion-body">
+              <p>
+                Een van mijn grootste passies buiten de IT-wereld is
+                krachttraining in de sportschool. Ik ben meerdere keren per week
+                in de gym te vinden om te werken aan mijn fysieke en mentale
+                gezondheid. Voor mij is krachttraining een les in discipline,
+                focus en geduld. Progressie komt niet vanzelf, maar ontstaat
+                door elke week consequent en doelgericht te trainen.
+              </p>
+              <p class="mb-0">
+                Die mentaliteit helpt me bij het studeren. Bij een ingewikkelde
+                foutmelding geeft krachttraining me de rust en het
+                doorzettingsvermogen om niet op te geven. In de sportschool leer
+                je dat je door obstakels heen moet werken om resultaat te zien,
+                en bij softwareontwikkeling is dat hetzelfde.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#h2"
+            >
+              <i class="bi bi-bicycle me-2"></i>Motorrijden en vrijheid
+            </button>
+          </h2>
+          <div
+            id="h2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#hobbyUitleg"
+          >
+            <div class="accordion-body">
+              <p>
+                Mijn tweede grote passie is motorrijden. Er gaat niets boven het
+                gevoel van vrijheid wanneer je op de motor stapt na een
+                intensieve dag achter het computerscherm. Het is de ideale
+                manier om mijn hoofd leeg te maken en van de omgeving te
+                genieten. Motorrijden vraagt om alertheid, focus en snel
+                beslissen: je moet altijd vooruitkijken en situaties van tevoren
+                inschatten.
+              </p>
+              <p class="mb-0">
+                Die focus en dat vooruitkijken zijn handig bij het ontwerpen van
+                websites en applicaties. Bij UI-design moet je ook vooruitdenken
+                over hoe een bezoeker door een pagina navigeert en hoe je de
+                ervaring zo helder mogelijk maakt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#h3"
+            >
+              <i class="bi bi-tools me-2"></i>Sleutelen en techniek
+            </button>
+          </h2>
+          <div
+            id="h3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#hobbyUitleg"
+          >
+            <div class="accordion-body">
+              <p class="mb-0">
+                Naast het rijden vind ik het boeiend om zelf onderhoud uit te
+                voeren en aan machines te sleutelen. De mechanica achter een
+                voertuig begrijpen geeft me veel voldoening. Werkt een onderdeel
+                niet, dan zoek je stap voor stap de oorzaak, haal je het los,
+                maak je het schoon of vervang je het. Dat analytisch problemen
+                oplossen sluit perfect aan bij het debuggen van code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h4">Mijn wekelijkse tijdsbesteding</h2>
+      <div class="table-responsive">
+        <table class="table table-striped align-middle">
+          <caption>
+            Tijd die ik wekelijks aan mijn hobby's besteed en de vaardigheden
+            die ik ermee ontwikkel.
+          </caption>
+          <thead>
+            <tr>
+              <th>Hobby</th>
+              <th>Uren per week</th>
+              <th>Belangrijkste vaardigheid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Krachttraining</td>
+              <td>6 tot 8 uur</td>
+              <td>Discipline en doorzettingsvermogen</td>
+            </tr>
+            <tr>
+              <td>Motorrijden</td>
+              <td>3 tot 5 uur</td>
+              <td>Focus en anticipatie</td>
+            </tr>
+            <tr>
+              <td>Sleutelen</td>
+              <td>2 tot 4 uur</td>
+              <td>Analytisch probleemoplossen</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Boran Sert</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#hoofdmenu" aria-controls="hoofdmenu"
-              aria-expanded="false" aria-label="Menu openen">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="hoofdmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-          <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
-          <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
+      <div class="row">
+        <div class="col-6">&copy; 2026 Sert Boran</div>
+        <div class="col-6 text-end">
+          <a href="https://www.facebook.com/" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="https://x.com/" class="text-white"><i class="bi bi-twitter-x"></i></a>
+        </div>
       </div>
     </div>
-  </nav>
-
-  <h1>Mijn Hobby's en Interesses</h1>
-
-  <p>Naast mijn studie Graduaat Programmeren aan Thomas More vind ik het belangrijk om bezig te blijven met activiteiten die mij energie geven. Mijn hobby's zorgen ervoor dat ik mijn verstand even op nul kan zetten, maar tegelijkertijd helpen ze mij ook om vaardigheden te ontwikkelen die van pas komen bij het programmeren. Op deze pagina vertel ik uitgebreid over mijn drie grootste passies: krachttraining, motorrijden en sleutelen aan mechanica.</p>
-
-  <div class="foto-hobby">
-    <img src="images/Hobby1.jpg" alt="Krachttraining in de sportschool" class="hobby-img-1">
-    <img src="images/Hobby2.jpg" alt="Motorfiets op de weg" class="hobby-img-2">
-    <img src="images/Hobby3.jpg" alt="Motorfiets op de weg" class="hobby-img-3">
-  </div>
-
-  <h2>1. Krachttraining en Discipline</h2>
-
-
-  <p>Een van mijn grootste passies buiten de IT-wereld is krachttraining in de sportschool. Ik ben meerdere keren per week in de gym te vinden om te werken aan mijn fysieke en mentale gezondheid. Voor mij is krachttraining veel meer dan alleen het heffen van gewichten. Het is een echte levensles in discipline, focus en het hebben van geduld. Progressie in de sportschool komt immers niet vanzelf, maar ontstaat door elke week opnieuw consequent en doelgericht te trainen.</p>
-
-  <p>De mentaliteit die ik in de sportschool opbouw, helpt mij enorm bij het studeren. Wanneer ik bezig ben met het schrijven van code en ik een ingewikkelde foutmelding of fout in de logica tegenkom, geeft krachttraining mij de rust en het doorzettingsvermogen om niet op te geven. Je leert immers in de sportschool dat je door obstakels heen moet werken om resultaat te zien, en dat is bij softwareontwikkeling precies hetzelfde.</p>
-
-  <h2>2. Motorrijden en Vrijheid</h2>
-
-  <p>Mijn tweede grote passie is motorrijden. Er gaat niets boven het gevoel van vrijheid wanneer je op de motor stapt na een intensieve dag achter het computerscherm. Het is voor mij de ideale manier om mijn hoofd helemaal leeg te maken en te genieten van de omgeving. Motorrijden vraagt om continue alertheid, focus en het vermogen om snel beslissingen te nemen op de weg. Je moet altijd goed vooruitkijken en potentiële situaties van tevoren inschatten.</p>
-
-  <p>Deze constante focus en het vooruitkijken zijn kwaliteiten die erg handig zijn bij het ontwerpen van websites en applicaties. Bij User Interface (UI) design moet je namelijk ook altijd vooruitdenken over hoe een bezoeker door een pagina navigeert en hoe je de ervaring zo helder en veilig mogelijk kunt maken voor de gebruiker.</p>
-
-  <h2>3. Sleutelen en Techniek</h2>
-
-  <p>Naast het rijden op de motor vind ik het ontzettend boeiend om zelf onderhoud uit te voeren en te sleutelen aan machines. Het begrijpen van de mechanica achter een voertuig geeft mij erg veel voldoening. Wanneer een onderdeel niet goed werkt, ga je stap voor stap op zoek naar de oorzaak, haal je het los, maak je het schoon of vervang je het. Dit proces van analytisch problemen oplossen sluit perfect aan bij het debuggen van code in IT.</p>
-
-  <h3>Overzicht van mijn wekelijkse tijdsbesteding</h3>
-
-  <table>
-    <caption>Tabel 1: Overzicht van de tijd die ik wekelijks besteed aan mijn hobby's en de vaardigheden die ik ermee ontwikkel.</caption>
-    <thead>
-      <tr>
-        <th>Hobby</th>
-        <th>Uren per week</th>
-        <th>Belangrijkste vaardigheid</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Krachttraining</td>
-        <td>6 tot 8 uur</td>
-        <td>Discipline & Doorzettingsvermogen</td>
-      </tr>
-      <tr>
-        <td>Motorrijden</td>
-        <td>3 tot 5 uur</td>
-        <td>Focus & Anticipatie</td>
-      </tr>
-      <tr>
-        <td>Sleutelen</td>
-        <td>2 tot 4 uur</td>
-        <td>Analytisch Probleemoplossen</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <footer>
-    <p>&copy; 2026 Boran Sert</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
